@@ -1,0 +1,36 @@
+{% extends "base.html" %} {% load static %} {% block title %}
+<title>about</title>
+{% endblock %} {% block cssLink %}
+<link rel="stylesheet" href="{% static 'css/meal.css' %}" />
+{% endblock %} {% block content %}
+
+<!-- popular section starts  -->
+
+<section class="popular" id="popular">
+  <div class="heading">
+    <span>popular food</span>
+    <h3>our special dishes</h3>
+  </div>
+
+  <div class="box-container">
+    {% for meal in meals_list %}
+    <div class="box">
+      <a href="#" class="fas fa-heart"></a>
+      <div class="image">
+        <img src="{{meal.strCategoryThumb}}" alt="" />
+      </div>
+      <div class="content">
+        <h3>{{meal.strCategory}}</h3>
+        <h4>{{ meal.strCategoryDescription|truncatewords:10 }}</h4>
+        <div class="price">Id : {{meal.idCategory}}</div>
+        <div class="price">$40.00 <span>$50.00</span></div>
+        <a href="#" class="btn">add to cart</a>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</section>
+
+<!-- popular section ends -->
+
+{% endblock %}

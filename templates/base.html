@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    {% block title %} {% endblock %}
+    <!-- font awesome cdn link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link rel="stylesheet" href="{%static 'css/style.css'%}" />
+    {% block cssLink %} {% endblock %}
+  </head>
+  <body>
+    <!-- header section starts  -->
+
+    <header>
+      <a href="/" class="logo"
+        ><i class="fas fa-utensils"></i>G Res.</a
+      >
+
+      <div id="menu-bar" class="fas fa-bars"></div>
+
+      <nav class="navbar">
+        <a href="/">Home</a>
+        <a href="{% url 'about' %}">About Us</a>
+        <a href="{% url 'show' %}">Show Items</a>
+      </nav>
+    </header>
+    
+
+    <div class="gap"></div>
+
+    <!-- header section ends -->
+
+
+
+
+
+    {% block content %} {% endblock %}
+
+    <!-- footer section start -->
+
+    <section class="footer">
+      <div class="share">
+        <a href="#" class="btn">facebook</a>
+        <a href="#" class="btn">twitter</a>
+        <a href="#" class="btn">instagram</a>
+        <a href="#" class="btn">pinterest</a>
+        <a href="#" class="btn">linkedin</a>
+      </div>
+
+      <h1 class="credit">
+        created by <span> IbrahimH </span> | all rights reserved!
+      </h1>
+    </section>
+
+    <!-- footer section ends -->
+
+    <!-- scroll top button  -->
+    <a href="#" class="fas fa-angle-up" id="scroll-top"></a>
+
+    <script src="{%static 'js/script.js'%}"></script>
+  </body>
+</html>

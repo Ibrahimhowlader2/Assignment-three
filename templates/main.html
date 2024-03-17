@@ -1,0 +1,110 @@
+{% extends "base.html" %} {% load static %} {% block title %}
+<title>home</title>
+{% endblock %} {% block cssLink %}
+<link rel="stylesheet" href="{% static 'css/style.css' %}" />
+{% endblock %} {% block content %}
+
+<!-- home section starts  -->
+
+<section class="home" id="home">
+  <div class="content">
+    <span>welcome ghorer restaurant</span>
+    <h3>different spices for the different tastes 😋</h3>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis unde
+      dolores temporibus hic quam debitis tenetur harum nemo.
+    </p>
+    <a href="#" class="btn">order now</a>
+  </div>
+
+  <div class="image">
+    <img src="{% static 'images/home_1.png' %}" alt="" />
+  </div>
+</section>
+
+<!-- home section ends -->
+
+<!-- speciality section starts  -->
+
+<section class="speciality" id="speciality">
+  <h1 class="heading">our <span>speciality</span></h1>
+
+  <div class="box-container">
+    <div class="box">
+      <img class="image" src="{%static 'images/s-img-2.jpg'%}" alt="" />
+      <div class="content">
+        <img src="images/s-1.png" alt="" />
+        <h3>tasty burger</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda
+          inventore neque amet ipsa tenetur voluptates aperiam tempore libero
+          labore aut.
+        </p>
+      </div>
+    </div>
+    <div class="box">
+      <img class="image" src="{%static 'images/s-img-2.jpg'%}" alt="" />
+      <div class="content">
+        <img src="images/s-2.png" alt="" />
+        <h3>tasty pizza</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda
+          inventore neque amet ipsa tenetur voluptates aperiam tempore libero
+          labore aut.
+        </p>
+      </div>
+    </div>
+    <div class="box">
+      <img class="image" src="{%static 'images/s-img-2.jpg'%}" alt="" />
+      <div class="content">
+        <img src="images/s-3.png" alt="" />
+        <h3>cold ice-cream</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda
+          inventore neque amet ipsa tenetur voluptates aperiam tempore libero
+          labore aut.
+        </p>
+      </div>
+    </div>
+    <div class="box">
+      <img class="image" src="{%static 'images/s-img-2.jpg'%}" alt="" />
+      <div class="content">
+        <img src="images/s-4.png" alt="" />
+        <h3>cold drinks</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda
+          inventore neque amet ipsa tenetur voluptates aperiam tempore libero
+          labore aut.
+        </p>
+      </div>
+    </div>
+    <div class="box">
+      <img class="image" src="{%static 'images/s-img-2.jpg'%}" alt="" />
+      <div class="content">
+        <img src="images/s-5.png" alt="" />
+        <h3>tasty sweets</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda
+          inventore neque amet ipsa tenetur voluptates aperiam tempore libero
+          labore aut.
+        </p>
+      </div>
+    </div>
+    <div class="box">
+      <img class="image" src="{%static 'images/s-img-2.jpg'%}" alt="" />
+      <div class="content">
+        <img src="images/s-6.png" alt="" />
+        <h3>healty breakfast</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda
+          inventore neque amet ipsa tenetur voluptates aperiam tempore libero
+          labore aut.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- speciality section ends -->
+
+{% endblock %}
